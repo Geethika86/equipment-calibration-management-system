@@ -1,0 +1,507 @@
+{
+  "anomaly_findings": {
+    "columns": [
+      {
+        "name": "entity_id",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "issue_type",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "details",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      }
+    ],
+    "foreign_keys": []
+  },
+  "approved_exceptions": {
+    "columns": [
+      {
+        "name": "exception_id",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 1
+      },
+      {
+        "name": "use_id",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      },
+      {
+        "name": "approved_by",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      },
+      {
+        "name": "reason",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      },
+      {
+        "name": "valid_until",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      }
+    ],
+    "foreign_keys": [
+      {
+        "column": "use_id",
+        "references_table": "production_uses",
+        "references_column": "use_id"
+      }
+    ]
+  },
+  "assets": {
+    "columns": [
+      {
+        "name": "asset_id",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 1
+      },
+      {
+        "name": "type_id",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "plan_id",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "serial_number",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      },
+      {
+        "name": "status",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "last_calibration_date",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      },
+      {
+        "name": "next_due_date",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      }
+    ],
+    "foreign_keys": [
+      {
+        "column": "plan_id",
+        "references_table": "calibration_plans",
+        "references_column": "plan_id"
+      },
+      {
+        "column": "type_id",
+        "references_table": "instrument_types",
+        "references_column": "type_id"
+      }
+    ]
+  },
+  "audit_records": {
+    "columns": [
+      {
+        "name": "audit_id",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 1
+      },
+      {
+        "name": "entity_type",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      },
+      {
+        "name": "entity_id",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      },
+      {
+        "name": "action",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      },
+      {
+        "name": "timestamp",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      }
+    ],
+    "foreign_keys": []
+  },
+  "calibration_events": {
+    "columns": [
+      {
+        "name": "calibration_id",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 1
+      },
+      {
+        "name": "asset_id",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "supplier_id",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      },
+      {
+        "name": "event_date",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "due_date_calculated",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      },
+      {
+        "name": "result",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      }
+    ],
+    "foreign_keys": [
+      {
+        "column": "supplier_id",
+        "references_table": "suppliers",
+        "references_column": "supplier_id"
+      },
+      {
+        "column": "asset_id",
+        "references_table": "assets",
+        "references_column": "asset_id"
+      }
+    ]
+  },
+  "calibration_plans": {
+    "columns": [
+      {
+        "name": "plan_id",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 1
+      },
+      {
+        "name": "type_id",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "interval_days",
+        "type": "INTEGER",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "grace_period_days",
+        "type": "INTEGER",
+        "required": true,
+        "primary_key_position": 0
+      }
+    ],
+    "foreign_keys": [
+      {
+        "column": "type_id",
+        "references_table": "instrument_types",
+        "references_column": "type_id"
+      }
+    ]
+  },
+  "certificates": {
+    "columns": [
+      {
+        "name": "certificate_id",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 1
+      },
+      {
+        "name": "calibration_id",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "asset_id",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "issued_date",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      },
+      {
+        "name": "valid_until",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      }
+    ],
+    "foreign_keys": [
+      {
+        "column": "calibration_id",
+        "references_table": "calibration_events",
+        "references_column": "calibration_id"
+      }
+    ]
+  },
+  "compliance_flags": {
+    "columns": [
+      {
+        "name": "use_id",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 1
+      },
+      {
+        "name": "asset_id",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "use_timestamp",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "compliance_status",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "exception_approved",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      },
+      {
+        "name": "reason_codes",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      }
+    ],
+    "foreign_keys": [
+      {
+        "column": "asset_id",
+        "references_table": "assets",
+        "references_column": "asset_id"
+      },
+      {
+        "column": "use_id",
+        "references_table": "production_uses",
+        "references_column": "use_id"
+      }
+    ]
+  },
+  "ground_truth": {
+    "columns": [
+      {
+        "name": "entity_id",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "issue_type",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "details",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      }
+    ],
+    "foreign_keys": []
+  },
+  "instrument_types": {
+    "columns": [
+      {
+        "name": "type_id",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 1
+      },
+      {
+        "name": "type_name",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "measurement_unit",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      },
+      {
+        "name": "default_interval_days",
+        "type": "INTEGER",
+        "required": false,
+        "primary_key_position": 0
+      }
+    ],
+    "foreign_keys": []
+  },
+  "production_uses": {
+    "columns": [
+      {
+        "name": "use_id",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 1
+      },
+      {
+        "name": "asset_id",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "use_timestamp",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "flagged_overdue",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      }
+    ],
+    "foreign_keys": [
+      {
+        "column": "asset_id",
+        "references_table": "assets",
+        "references_column": "asset_id"
+      }
+    ]
+  },
+  "suppliers": {
+    "columns": [
+      {
+        "name": "supplier_id",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 1
+      },
+      {
+        "name": "name",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "iso_accredited",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      }
+    ],
+    "foreign_keys": []
+  },
+  "work_orders": {
+    "columns": [
+      {
+        "name": "work_order_id",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 1
+      },
+      {
+        "name": "asset_id",
+        "type": "TEXT",
+        "required": true,
+        "primary_key_position": 0
+      },
+      {
+        "name": "calibration_id",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      },
+      {
+        "name": "issue_description",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      },
+      {
+        "name": "corrective_action",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      },
+      {
+        "name": "impact_assessment",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      },
+      {
+        "name": "status",
+        "type": "TEXT",
+        "required": false,
+        "primary_key_position": 0
+      }
+    ],
+    "foreign_keys": [
+      {
+        "column": "calibration_id",
+        "references_table": "calibration_events",
+        "references_column": "calibration_id"
+      },
+      {
+        "column": "asset_id",
+        "references_table": "assets",
+        "references_column": "asset_id"
+      }
+    ]
+  }
+}

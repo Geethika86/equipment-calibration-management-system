@@ -1,0 +1,21 @@
+﻿EQUIPMENT CALIBRATION SYSTEM - VALIDATION REPORT
+Generated: 2026-10-28 16:28:44
+
+1. DATASET ROW COUNTS
+PASS | assets.csv | Expected=2000 | Actual=2000
+PASS | calibration_events.csv | Expected=5000 | Actual=5000
+PASS | production_uses.csv | Expected=100000 | Actual=100000
+
+2. DOCUMENTED INTENTIONAL ANOMALIES
+DOCUMENTED | DUE_DATE_INCONSISTENT_WITH_PLAN | Count=1
+DOCUMENTED | CERTIFICATE_ASSET_MISMATCH | Count=1
+DOCUMENTED | FAILED_CALIBRATION_NO_IMPACT_ASSESSMENT | Count=1
+
+3. REFERENCE VALIDATION
+PASS | 8 foreign-key relationships checked
+REVIEW | 1 known certificate-to-asset mismatch
+
+4. REPRODUCIBILITY
+PASS | Previous generation comparison confirmed identical CSV outputs
+
+Note: Re-run validation after any generator changes.

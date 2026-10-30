@@ -1,0 +1,434 @@
+[
+  {
+    "ground_truth_id": "GT-000001",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001190-2026-000100",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000002",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001756-2026-000200",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000003",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001930-2026-000300",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000004",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000934-2026-000400",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000005",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001372-2026-000500",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000006",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000810-2026-000600",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000007",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001174-2026-000700",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000008",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000829-2026-000800",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000009",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001686-2026-000900",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000010",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001438-2026-001000",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000011",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000408-2026-001100",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000012",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000522-2026-001200",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000013",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000452-2026-001300",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000014",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001581-2026-001400",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000015",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000986-2026-001500",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000016",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000506-2026-001600",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000017",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001239-2026-001700",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000018",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000871-2026-001800",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000019",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000065-2026-001900",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000020",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001801-2026-002000",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000021",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001957-2026-002100",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000022",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000285-2026-002200",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000023",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000016-2026-002300",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000024",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000858-2026-002400",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000025",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001439-2026-002500",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000026",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001804-2026-002600",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000027",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001479-2026-002700",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000028",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000648-2026-002800",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000029",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001693-2026-002900",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000030",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000068-2026-003000",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000031",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000795-2026-003100",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000032",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000895-2026-003200",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000033",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001979-2026-003300",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000034",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000376-2026-003400",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000035",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000902-2026-003500",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000036",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001056-2026-003600",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000037",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000986-2026-003700",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000038",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000310-2026-003800",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000039",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000884-2026-003900",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000040",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000913-2026-004000",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000041",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001350-2026-004100",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000042",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001181-2026-004200",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000043",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000343-2026-004300",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000044",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001697-2026-004400",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000045",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000642-2026-004500",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000046",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000575-2026-004600",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000047",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000997-2026-004700",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000048",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001940-2026-004800",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000049",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000117-2026-004900",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000050",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-001325-2026-005000",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000051",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000840-2026-000001",
+    "issue_type": "DUE_DATE_INCONSISTENT_WITH_PLAN",
+    "details": "Stored due date does not equal event date plus plan interval.",
+    "expected_decision": "FLAG_DUE_DATE_INCONSISTENCY"
+  },
+  {
+    "ground_truth_id": "GT-000052",
+    "entity_type": "ProductionUse",
+    "entity_id": "USE-AST-001696-20260715010000",
+    "issue_type": "EXPIRED_INSTRUMENT_USED_WITHOUT_EXCEPTION",
+    "details": "Use event occurs after calibration expiry without an approved extension.",
+    "expected_decision": "BLOCK_USE_AND_RAISE_HIGH_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000053",
+    "entity_type": "Certificate",
+    "entity_id": "CERT-CAL-AST-001696-2026-000002",
+    "issue_type": "CERTIFICATE_ASSET_MISMATCH",
+    "details": "Certificate asset differs from the asset on its calibration event.",
+    "expected_decision": "FLAG_CERTIFICATE_ASSET_MISMATCH"
+  },
+  {
+    "ground_truth_id": "GT-000054",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000342-2026-000003",
+    "issue_type": "FAILED_CALIBRATION_NO_IMPACT_ASSESSMENT",
+    "details": "Calibration failed and a corrective work order exists, but impact_assessment is missing.",
+    "expected_decision": "COMPLETE_IMPACT_ASSESSMENT_AND_REVIEW_AFFECTED_PRODUCTION"
+  }
+]

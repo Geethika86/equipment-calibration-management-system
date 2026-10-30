@@ -1,0 +1,159 @@
+﻿generator_fixed.py | Line 136 | "next_due_date": ""
+generator_fixed.py | Line 153 | due_date = event_date + timedelta(days=plan["interval_days"])
+generator_fixed.py | Line 167 | "due_date_calculated": self._date(due_date),
+generator_fixed.py | Line 182 | "valid_until": self._date(due_date),
+generator_fixed.py | Line 210 | "corrective_action": "Inspect instrument, adjust calibration, and perform verification",
+generator_fixed.py | Line 211 | "impact_assessment": "Review measurements produced since the last successful calibration",
+generator_fixed.py | Line 233 | original_due = datetime.strptime(calibration["due_date_calculated"], DATE_FORMAT)
+generator_fixed.py | Line 240 | "original_due_date": self._date(original_due),
+generator_fixed.py | Line 241 | "extended_due_date": self._date(original_due + timedelta(days=extension_days)),
+generator_fixed.py | Line 254 | asset["next_due_date"] = ""
+generator_fixed.py | Line 258 | asset["next_due_date"] = latest["due_date_calculated"]
+generator_fixed.py | Line 260 | def _effective_due_date(self, calibration_id, original_due):
+generator_fixed.py | Line 265 | selected = max(extensions, key=lambda e: datetime.strptime(e["extended_due_date"], DATE_FORMAT))
+generator_fixed.py | Line 266 | extended = datetime.strptime(selected["extended_due_date"], DATE_FORMAT)
+generator_fixed.py | Line 286 | exception_applied = False
+generator_fixed.py | Line 287 | exception_id = ""
+generator_fixed.py | Line 289 | effective_due = None
+generator_fixed.py | Line 297 | due_date = datetime.strptime(applicable["due_date_calculated"], DATE_FORMAT)
+generator_fixed.py | Line 298 | effective_due, matching_exception_id = self._effective_due_date(applicable["calibration_id"], due_date)
+generator_fixed.py | Line 299 | exception_applied = bool(matching_exception_id and use_time.date() > due_date.date() and use_time.date() <= effective_due.date())
+generator_fixed.py | Line 300 | exception_id = matching_exception_id if exception_applied else ""
+generator_fixed.py | Line 301 | if use_time.date() <= effective_due.date():
+generator_fixed.py | Line 302 | decision = "ALLOWED_EXTENSION" if exception_applied else "ALLOWED_IN_CALIBRATION_WINDOW"
+generator_fixed.py | Line 314 | "exception_applied": exception_applied,
+generator_fixed.py | Line 315 | "exception_id": exception_id
+generator_fixed.py | Line 324 | cal["due_date_calculated"] = "2099-01-01"
+generator_fixed.py | Line 326 | "DUE_DATE_INCONSISTENT_WITH_PLAN",
+generator_fixed.py | Line 328 | "FLAG_DUE_DATE_INCONSISTENCY")
+generator_fixed.py | Line 330 | # Required case 2: expired instrument used without an exception.
+generator_fixed.py | Line 335 | and datetime.strptime(c["due_date_calculated"], DATE_FORMAT) < datetime(2025, 12, 1)
+generator_fixed.py | Line 342 | due = datetime.strptime(cal["due_date_calculated"], DATE_FORMAT)
+generator_fixed.py | Line 360 | "exception_applied": False,
+generator_fixed.py | Line 361 | "exception_id": ""
+generator_fixed.py | Line 363 | self._add_ground_truth("ProductionUse", use_id, "EXPIRED_INSTRUMENT_USED_WITHOUT_EXCEPTION",
+generator_fixed.py | Line 393 | "FAILED_CALIBRATION_NO_IMPACT_ASSESSMENT",
+generator_fixed.py | Line 395 | "CREATE_CORRECTIVE_WORK_ORDER_AND_IMPACT_ASSESSMENT"
+generator_fixed.py | Line 398 | # Deliberately remove any baseline work order for this calibration so the exception is unambiguous.
+generator_fixed.py | Line 401 | "FAILED_CALIBRATION_NO_IMPACT_ASSESSMENT",
+generator_fixed.py | Line 403 | "CREATE_CORRECTIVE_WORK_ORDER_AND_IMPACT_ASSESSMENT")
+generator_fixed.py | Line 469 | approved_exceptions = [{
+generator_fixed.py | Line 470 | "exception_id": e["extension_id"],
+generator_fixed.py | Line 473 | "original_due_date": e["original_due_date"],
+generator_fixed.py | Line 474 | "extended_due_date": e["extended_due_date"],
+generator_fixed.py | Line 501 | "approved_exceptions": approved_exceptions,
+generator_fixed.py | Line 543 | self._validate_and_write_summary(output_dir)
+generator_fixed.py | Line 552 | "assets": ["asset_id", "type_id", "plan_id", "serial_number", "status", "commissioned_date", "last_calibration_date", "next_due_date"],
+generator_fixed.py | Line 553 | "calibration_events": ["calibration_id", "asset_id", "supplier_id", "event_date", "result", "measurement_value", "measurement_unit", "measured_error", "due_date_calculated", "event_status"],
+generator_fixed.py | Line 555 | "work_orders": ["work_order_id", "asset_id", "calibration_id", "issue_description", "corrective_action", "impact_assessment", "opened_at", "downtime_start", "downtime_end", "downtime_hours", "status"],
+generator_fixed.py | Line 556 | "production_uses": ["use_id", "asset_id", "use_timestamp", "applicable_calibration_id", "flagged_overdue", "use_decision", "exception_applied", "exception_id"],
+generator_fixed.py | Line 557 | "calibration_extensions": ["extension_id", "asset_id", "calibration_id", "original_due_date", "extended_due_date", "extension_days", "reason", "approved_by", "approval_status", "approved_at"],
+generator_fixed.py | Line 558 | "approved_exceptions": ["exception_id", "asset_id", "calibration_id", "original_due_date", "extended_due_date", "extension_days", "reason", "approved_by", "approval_status", "approved_at"],
+generator_fixed.py | Line 576 | CREATE TABLE assets (asset_id TEXT PRIMARY KEY, type_id TEXT NOT NULL REFERENCES instrument_types(type_id), plan_id TEXT NOT NULL REFERENCES calibration_plans(plan_id), serial_number TEXT NOT NULL UNIQUE, status TEXT NOT NULL CHECK(status IN ('ACTIVE','MAINTENANCE','RETIRED')), commissioned_date TEXT NOT NULL, last_calibration_date TEXT, next_due_date TEXT);
+generator_fixed.py | Line 577 | CREATE TABLE calibration_events (calibration_id TEXT PRIMARY KEY, asset_id TEXT NOT NULL REFERENCES assets(asset_id), supplier_id TEXT NOT NULL REFERENCES suppliers(supplier_id), event_date TEXT NOT NULL, result TEXT NOT NULL CHECK(result IN ('PASS','FAIL')), measurement_value REAL NOT NULL, measurement_unit TEXT NOT NULL, measured_error REAL NOT NULL, due_date_calculated TEXT NOT NULL, event_status TEXT NOT NULL CHECK(event_status IN ('COMPLETED')));
+generator_fixed.py | Line 579 | CREATE TABLE work_orders (work_order_id TEXT PRIMARY KEY, asset_id TEXT NOT NULL REFERENCES assets(asset_id), calibration_id TEXT NOT NULL REFERENCES calibration_events(calibration_id), issue_description TEXT NOT NULL, corrective_action TEXT NOT NULL, impact_assessment TEXT NOT NULL, opened_at TEXT NOT NULL, downtime_start TEXT NOT NULL, downtime_end TEXT NOT NULL, downtime_hours INTEGER NOT NULL CHECK(downtime_hours >= 0), status TEXT NOT NULL CHECK(status IN ('OPEN','IN_PROGRESS','COMPLETED')));
+generator_fixed.py | Line 580 | CREATE TABLE calibration_extensions (extension_id TEXT PRIMARY KEY, asset_id TEXT NOT NULL REFERENCES assets(asset_id), calibration_id TEXT NOT NULL REFERENCES calibration_events(calibration_id), original_due_date TEXT NOT NULL, extended_due_date TEXT NOT NULL, extension_days INTEGER NOT NULL CHECK(extension_days > 0), reason TEXT NOT NULL, approved_by TEXT NOT NULL, approval_status TEXT NOT NULL CHECK(approval_status IN ('APPROVED','REJECTED','PENDING')), approved_at TEXT NOT NULL);
+generator_fixed.py | Line 581 | CREATE TABLE approved_exceptions (exception_id TEXT PRIMARY KEY, asset_id TEXT NOT NULL REFERENCES assets(asset_id), calibration_id TEXT NOT NULL REFERENCES calibration_events(calibration_id), original_due_date TEXT NOT NULL, extended_due_date TEXT NOT NULL, extension_days INTEGER NOT NULL CHECK(extension_days > 0), reason TEXT NOT NULL, approved_by TEXT NOT NULL, approval_status TEXT NOT NULL CHECK(approval_status IN ('APPROVED','REJECTED','PENDING')), approved_at TEXT NOT NULL);
+generator_fixed.py | Line 582 | CREATE TABLE production_uses (use_id TEXT PRIMARY KEY, asset_id TEXT NOT NULL REFERENCES assets(asset_id), use_timestamp TEXT NOT NULL, applicable_calibration_id TEXT REFERENCES calibration_events(calibration_id), flagged_overdue INTEGER NOT NULL CHECK(flagged_overdue IN (0,1)), use_decision TEXT NOT NULL, exception_applied INTEGER NOT NULL CHECK(exception_applied IN (0,1)), exception_id TEXT REFERENCES approved_exceptions(exception_id));
+generator_fixed.py | Line 588 | insert_order = ["suppliers", "instrument_types", "calibration_plans", "assets", "calibration_events", "certificates", "work_orders", "calibration_extensions", "approved_exceptions", "ground_truth", "anomaly_findings", "production_uses", "alerts", "audit_records"]
+generator_fixed.py | Line 640 | "ApprovedException": {"table": "approved_exceptions", "primary_key": "exception_id", "foreign_keys": ["asset_id -> assets.asset_id", "calibration_id -> calibration_events.calibration_id"]},
+generator_fixed.py | Line 644 | "lifecycle_states": {"asset": ["ACTIVE", "MAINTENANCE", "RETIRED"], "calibration_result": ["PASS", "FAIL"], "work_order": ["OPEN", "IN_PROGRESS", "COMPLETED"], "alert": ["OPEN", "ACKNOWLEDGED", "RESOLVED"]},
+generator_fixed.py | Line 646 | "due_date = calibration event date + plan interval_days",
+generator_fixed.py | Line 647 | "a production use after effective due date is blocked unless an approved extension is in force",
+generator_fixed.py | Line 663 | "calibration_events": "Calibration event history. result is PASS or FAIL; due_date_calculated is event date plus plan interval except labelled anomaly.",
+generator_fixed.py | Line 665 | "work_orders": "Corrective action and downtime. failed baseline calibrations have corrective_action and impact_assessment; the labelled exception is intentionally missing.",
+generator_fixed.py | Line 667 | "calibration_extensions": "Calibration extension source records; original due dates remain unchanged and extended_due_date is explicit.",
+generator_fixed.py | Line 668 | "approved_exceptions": "Approved exception records referenced by production uses; only approved records may authorize use past original due date.",
+generator_fixed.py | Line 696 | optional = field in {"last_calibration_date", "next_due_date", "applicable_calibration_id", "from_state", "to_state"} or (name == "production_uses" and field == "applicable_calibration_id")
+generator_fixed.py | Line 702 | f.write("- InstrumentType 1:N Asset; InstrumentType 1:N CalibrationPlan.\n- CalibrationPlan 1:N Asset.\n- Asset 1:N CalibrationEvent and 1:N ProductionUse.\n- Supplier 1:N CalibrationEvent.\n- CalibrationEvent 0:1 Certificate (certificate gaps are labelled), 0:N WorkOrder, and 0:N CalibrationExtension/ApprovedException.\n- ProductionUse optionally references one ApprovedException.\n- AnomalyFinding N:1 GroundTruth through ground_truth_id.\n- Alert and AuditRecord use a polymorphic entity_type/entity_id pair; alert asset_id is an optional FK to Asset.\n- GroundTruth is a separate evaluation-label table, not an input feature.\n")
+generator_fixed.py | Line 704 | def _validate_and_write_summary(self, output_dir):
+generator_fixed.py | Line 715 | "approved_exceptions": "exception_id", "anomaly_findings": "finding_id"
+generator_fixed.py | Line 746 | # Validate certificate references and asset relationships.
+generator_fixed.py | Line 768 | # Validate production-use references.
+generator_fixed.py | Line 787 | # Validate production-use references against the actual approved-exception dataset.
+generator_fixed.py | Line 788 | exceptions_by_id = {
+generator_fixed.py | Line 789 | e["exception_id"]: e
+generator_fixed.py | Line 790 | for e in datasets["approved_exceptions"]
+generator_fixed.py | Line 793 | for exception in datasets["approved_exceptions"]:
+generator_fixed.py | Line 794 | if exception["asset_id"] not in asset_ids:
+generator_fixed.py | Line 796 | f"Approved exception has invalid asset FK: "
+generator_fixed.py | Line 797 | f"{exception['exception_id']}"
+generator_fixed.py | Line 800 | if exception["calibration_id"] not in calibration_ids:
+generator_fixed.py | Line 802 | f"Approved exception has invalid calibration FK: "
+generator_fixed.py | Line 803 | f"{exception['exception_id']}"
+generator_fixed.py | Line 807 | exception["original_due_date"], DATE_FORMAT
+generator_fixed.py | Line 810 | exception["extended_due_date"], DATE_FORMAT
+generator_fixed.py | Line 815 | f"Exception extension date is not later than original due date: "
+generator_fixed.py | Line 816 | f"{exception['exception_id']}"
+generator_fixed.py | Line 820 | if exception["extension_days"] != expected_days:
+generator_fixed.py | Line 822 | f"Incorrect extension_days: {exception['exception_id']}"
+generator_fixed.py | Line 825 | if exception["approval_status"] == "APPROVED":
+generator_fixed.py | Line 826 | if not exception["approved_by"] or not exception["approved_at"]:
+generator_fixed.py | Line 828 | f"Approved exception lacks approval details: "
+generator_fixed.py | Line 829 | f"{exception['exception_id']}"
+generator_fixed.py | Line 833 | exception_id = use.get("exception_id", "")
+generator_fixed.py | Line 835 | if use.get("exception_applied") and not exception_id:
+generator_fixed.py | Line 837 | f"Use marked exception-applied without an exception ID: "
+generator_fixed.py | Line 841 | if exception_id:
+generator_fixed.py | Line 842 | exception = exceptions_by_id.get(exception_id)
+generator_fixed.py | Line 844 | if not exception:
+generator_fixed.py | Line 846 | f"Production use references missing exception: "
+generator_fixed.py | Line 851 | if exception["approval_status"] != "APPROVED":
+generator_fixed.py | Line 853 | f"Production use references unapproved exception: "
+generator_fixed.py | Line 857 | if exception["asset_id"] != use["asset_id"]:
+generator_fixed.py | Line 859 | f"Exception asset does not match production use: "
+generator_fixed.py | Line 867 | exception["original_due_date"], DATE_FORMAT
+generator_fixed.py | Line 870 | exception["extended_due_date"], DATE_FORMAT
+generator_fixed.py | Line 873 | if use.get("exception_applied"):
+generator_fixed.py | Line 876 | f"Exception used outside its valid date window: "
+generator_fixed.py | Line 893 | if cal["calibration_id"] in {x["entity_id"] for x in self.ground_truth if x["issue_type"] == "DUE_DATE_INCONSISTENT_WITH_PLAN"}:
+generator_fixed.py | Line 899 | if cal["due_date_calculated"] != expected_due:
+generator_fixed.py | Line 902 | # Validate failed calibrations; only the one explicitly labelled exception may lack assessment.
+generator_fixed.py | Line 904 | intentional_missing = {x["entity_id"] for x in self.ground_truth if x["issue_type"] == "FAILED_CALIBRATION_NO_IMPACT_ASSESSMENT"}
+generator_fixed.py | Line 908 | if not wo or not wo["corrective_action"] or not wo["impact_assessment"]:
+generator_fixed.py | Line 912 | "DUE_DATE_INCONSISTENT_WITH_PLAN",
+generator_fixed.py | Line 913 | "EXPIRED_INSTRUMENT_USED_WITHOUT_EXCEPTION",
+generator_fixed.py | Line 915 | "FAILED_CALIBRATION_NO_IMPACT_ASSESSMENT"
+generator_fixed.py | Line 923 | if issue["issue_type"] == "EXPIRED_INSTRUMENT_USED_WITHOUT_EXCEPTION":
+generator_fixed.py | Line 925 | if not use or not use["flagged_overdue"] or use["exception_applied"] or use["use_decision"] != "BLOCKED_OVERDUE":
+validate_data.py | Line 13 | "DUE_DATE_INCONSISTENT_WITH_PLAN",
+validate_data.py | Line 14 | "EXPIRED_INSTRUMENT_USED_WITHOUT_EXCEPTION",
+validate_data.py | Line 16 | "FAILED_CALIBRATION_NO_IMPACT_ASSESSMENT",
+validate_data.py | Line 45 | "anomaly_findings", "approved_exceptions",
+validate_data.py | Line 120 | if issue == "DUE_DATE_INCONSISTENT_WITH_PLAN"
+validate_data.py | Line 142 | actual_due = date.fromisoformat(event["due_date_calculated"])
+validate_data.py | Line 218 | if issue == "FAILED_CALIBRATION_NO_IMPACT_ASSESSMENT"
+test_calibration_system.py | Line 10 | "DUE_DATE_INCONSISTENT_WITH_PLAN",
+test_calibration_system.py | Line 11 | "EXPIRED_INSTRUMENT_USED_WITHOUT_EXCEPTION",
+test_calibration_system.py | Line 13 | "FAILED_CALIBRATION_NO_IMPACT_ASSESSMENT",
+test_calibration_system.py | Line 34 | cls.exceptions = load_csv("approved_exceptions.csv")
+test_calibration_system.py | Line 48 | self.assertEqual(
+test_calibration_system.py | Line 55 | self.assertEqual(len(self.assets), 2000)
+test_calibration_system.py | Line 56 | self.assertEqual(len(self.events), 5000)
+test_calibration_system.py | Line 57 | self.assertEqual(len(self.uses), 100000)
+test_calibration_system.py | Line 58 | self.assertEqual(len(self.certificates), 5000)
+test_calibration_system.py | Line 74 | self.assertTrue(all(values), f"Empty {field}")
+test_calibration_system.py | Line 75 | self.assertEqual(len(values), len(set(values)))
+test_calibration_system.py | Line 80 | self.assertEqual(len(flag_ids), len(set(flag_ids)))
+test_calibration_system.py | Line 81 | self.assertEqual(set(use_ids), set(flag_ids))
+test_calibration_system.py | Line 89 | self.assertTrue(REQUIRED_ANOMALIES.issubset(labels))
+test_calibration_system.py | Line 91 | self.assertIn(
+test_calibration_system.py | Line 96 | def test_due_date_anomaly_violates_plan_interval(self):
+test_calibration_system.py | Line 98 | "DUE_DATE_INCONSISTENT_WITH_PLAN"
+test_calibration_system.py | Line 108 | actual = date.fromisoformat(event["due_date_calculated"])
+test_calibration_system.py | Line 109 | self.assertNotEqual(actual, expected)
+test_calibration_system.py | Line 117 | self.assertEqual(len(matches), 1)
+test_calibration_system.py | Line 122 | self.assertTrue(
+test_calibration_system.py | Line 127 | def test_failed_calibration_has_no_impact_assessment(self):
+test_calibration_system.py | Line 129 | "FAILED_CALIBRATION_NO_IMPACT_ASSESSMENT"
+test_calibration_system.py | Line 132 | self.assertEqual(event["result"], "FAIL")
+test_calibration_system.py | Line 140 | if order.get("impact_assessment", "").strip()
+test_calibration_system.py | Line 142 | self.assertEqual(
+test_calibration_system.py | Line 147 | def test_expired_use_is_noncompliant_without_exception(self):
+test_calibration_system.py | Line 149 | "EXPIRED_INSTRUMENT_USED_WITHOUT_EXCEPTION"
+test_calibration_system.py | Line 156 | self.assertEqual(len(use_matches), 1)
+test_calibration_system.py | Line 159 | self.assertEqual(flag["compliance_status"], "NON_COMPLIANT")
+test_calibration_system.py | Line 160 | self.assertEqual(
+test_calibration_system.py | Line 161 | flag["exception_approved"].strip().lower(), "false"
+test_calibration_system.py | Line 165 | e for e in self.exceptions if e["use_id"] == use_id
+test_calibration_system.py | Line 167 | self.assertEqual(approved, [])

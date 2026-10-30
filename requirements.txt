@@ -1,0 +1,2 @@
+﻿# The generator and validation scripts use only Python standard-library modules.
+# No third-party packages are required.

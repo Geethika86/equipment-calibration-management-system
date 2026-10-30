@@ -1,0 +1,187 @@
+{
+  "README.md": {
+    "sha256": "69a657d3e8245714e5cccc8e97dfe064f1b386bbf5bab1f915df383c6ae6f351",
+    "size_bytes": 3777
+  },
+  "alerts.csv": {
+    "row_count": 57216,
+    "sha256": "a6699a86ecfb74cb2b6ca7a1d1c9ba56e289091e8a9d54fa5c37d6d34cf94e5f",
+    "size_bytes": 11614139
+  },
+  "assets.csv": {
+    "row_count": 2000,
+    "sha256": "14d567b2344e95a5dad9916054ae805b03b02787c4b80fea7434e4e88f36e6fb",
+    "size_bytes": 161156
+  },
+  "audit_records.csv": {
+    "row_count": 5882,
+    "sha256": "21fe68607d847f468661b4ae7b20a4d3988c09c27902df134150b652aa18dcda",
+    "size_bytes": 582641
+  },
+  "calibration_events.csv": {
+    "row_count": 5000,
+    "sha256": "75f6ebe214152e091358328f01230b8368d44a47be5ddf15d47b6b7a275116ca",
+    "size_bytes": 552206
+  },
+  "calibration_extensions.csv": {
+    "row_count": 50,
+    "sha256": "aad5f2e55c19424d069f8b178359317fb798f65acdb7123b1c414210f8d25484",
+    "size_bytes": 10504
+  },
+  "calibration_plans.csv": {
+    "row_count": 5,
+    "sha256": "3c2a971d6560a820aae7f72a47d608ee8031d4c7feb13c91a07fb8572cc79185",
+    "size_bytes": 274
+  },
+  "certificates.csv": {
+    "row_count": 4950,
+    "sha256": "f4f07df8671d1efdc596db6d84139fa458626ecb4b50c4c6231c3a41dba7dc6b",
+    "size_bytes": 544594
+  },
+  "data_dictionary.md": {
+    "sha256": "ad551c4b7d01a28f5150554410febfebb51aaf1ee347796de49e128236aae12d",
+    "size_bytes": 16628
+  },
+  "datasets.json": {
+    "sha256": "6e43c8cb8672f757888e2852713064c9f98b1c98ead0f3a3e078f41e7f628090",
+    "size_bytes": 61956427
+  },
+  "datasets.sql": {
+    "sha256": "120065ef22c8838c3f988f3d3a42a7087c43deb0b832d6898d967183c7986240",
+    "size_bytes": 33092090
+  },
+  "date_range": {
+    "end": "2025-12-31",
+    "start": "2025-01-01"
+  },
+  "files": {
+    "README.md": {
+      "sha256": "69a657d3e8245714e5cccc8e97dfe064f1b386bbf5bab1f915df383c6ae6f351",
+      "size_bytes": 3777
+    },
+    "alerts.csv": {
+      "row_count": 57216,
+      "sha256": "a6699a86ecfb74cb2b6ca7a1d1c9ba56e289091e8a9d54fa5c37d6d34cf94e5f",
+      "size_bytes": 11614139
+    },
+    "assets.csv": {
+      "row_count": 2000,
+      "sha256": "14d567b2344e95a5dad9916054ae805b03b02787c4b80fea7434e4e88f36e6fb",
+      "size_bytes": 161156
+    },
+    "audit_records.csv": {
+      "row_count": 5882,
+      "sha256": "21fe68607d847f468661b4ae7b20a4d3988c09c27902df134150b652aa18dcda",
+      "size_bytes": 582641
+    },
+    "calibration_events.csv": {
+      "row_count": 5000,
+      "sha256": "75f6ebe214152e091358328f01230b8368d44a47be5ddf15d47b6b7a275116ca",
+      "size_bytes": 552206
+    },
+    "calibration_extensions.csv": {
+      "row_count": 50,
+      "sha256": "aad5f2e55c19424d069f8b178359317fb798f65acdb7123b1c414210f8d25484",
+      "size_bytes": 10504
+    },
+    "calibration_plans.csv": {
+      "row_count": 5,
+      "sha256": "3c2a971d6560a820aae7f72a47d608ee8031d4c7feb13c91a07fb8572cc79185",
+      "size_bytes": 274
+    },
+    "certificates.csv": {
+      "row_count": 4950,
+      "sha256": "f4f07df8671d1efdc596db6d84139fa458626ecb4b50c4c6231c3a41dba7dc6b",
+      "size_bytes": 544594
+    },
+    "data_dictionary.md": {
+      "sha256": "ad551c4b7d01a28f5150554410febfebb51aaf1ee347796de49e128236aae12d",
+      "size_bytes": 16628
+    },
+    "datasets.json": {
+      "sha256": "6e43c8cb8672f757888e2852713064c9f98b1c98ead0f3a3e078f41e7f628090",
+      "size_bytes": 61956427
+    },
+    "datasets.sql": {
+      "sha256": "120065ef22c8838c3f988f3d3a42a7087c43deb0b832d6898d967183c7986240",
+      "size_bytes": 33092090
+    },
+    "ground_truth.csv": {
+      "row_count": 54,
+      "sha256": "e68ab959bb9d6787de0aff3c4cda057f8d55dbf7af94163f456fbd0aa3c64214",
+      "size_bytes": 8279
+    },
+    "ground_truth.json": {
+      "sha256": "b18ecbcc609f788fee3c403fb5ecf02030ad83890e11d7e1a6e153ab9b267cb8",
+      "size_bytes": 16306
+    },
+    "instrument_types.csv": {
+      "row_count": 5,
+      "sha256": "181a01d98cd01bd11b2238718dbaedff138e0c535ea2b0e7605a0ac5f198f7b5",
+      "size_bytes": 242
+    },
+    "production_uses.csv": {
+      "row_count": 100000,
+      "sha256": "8eca072f48e7956a694ba882d7782a755701a96b1541bf594bbb0a08e47c1c86",
+      "size_bytes": 11561676
+    },
+    "schema.json": {
+      "sha256": "8638588fd4bca2132834e72ba13599ce8e9112aa4f5fbb29e13d545f6d30d6ec",
+      "size_bytes": 3901
+    },
+    "suppliers.csv": {
+      "row_count": 9,
+      "sha256": "8a67196960ad444a2340bb698a1f9a6829b498681d6a8c77083dd316eada1837",
+      "size_bytes": 433
+    },
+    "validation_summary.txt": {
+      "sha256": "5095dc4c1d50bf1cc7b3b6a8b0ac9764affa15796fb29ed2f392638391351fb5",
+      "size_bytes": 6419
+    },
+    "work_orders.csv": {
+      "row_count": 372,
+      "sha256": "1fecc0a957d44e440a1305a92e146c9e5e6a114e9a0fc6852a0100f34680cdb0",
+      "size_bytes": 107838
+    }
+  },
+  "generator": "generator_quality.py",
+  "ground_truth.csv": {
+    "row_count": 54,
+    "sha256": "e68ab959bb9d6787de0aff3c4cda057f8d55dbf7af94163f456fbd0aa3c64214",
+    "size_bytes": 8279
+  },
+  "ground_truth.json": {
+    "sha256": "b18ecbcc609f788fee3c403fb5ecf02030ad83890e11d7e1a6e153ab9b267cb8",
+    "size_bytes": 16306
+  },
+  "instrument_types.csv": {
+    "row_count": 5,
+    "sha256": "181a01d98cd01bd11b2238718dbaedff138e0c535ea2b0e7605a0ac5f198f7b5",
+    "size_bytes": 242
+  },
+  "production_uses.csv": {
+    "row_count": 100000,
+    "sha256": "8eca072f48e7956a694ba882d7782a755701a96b1541bf594bbb0a08e47c1c86",
+    "size_bytes": 11561676
+  },
+  "project": "Equipment Calibration Management System",
+  "schema.json": {
+    "sha256": "8638588fd4bca2132834e72ba13599ce8e9112aa4f5fbb29e13d545f6d30d6ec",
+    "size_bytes": 3901
+  },
+  "seed": 20261022,
+  "suppliers.csv": {
+    "row_count": 9,
+    "sha256": "8a67196960ad444a2340bb698a1f9a6829b498681d6a8c77083dd316eada1837",
+    "size_bytes": 433
+  },
+  "validation_summary.txt": {
+    "sha256": "5095dc4c1d50bf1cc7b3b6a8b0ac9764affa15796fb29ed2f392638391351fb5",
+    "size_bytes": 6419
+  },
+  "work_orders.csv": {
+    "row_count": 372,
+    "sha256": "1fecc0a957d44e440a1305a92e146c9e5e6a114e9a0fc6852a0100f34680cdb0",
+    "size_bytes": 107838
+  }
+}

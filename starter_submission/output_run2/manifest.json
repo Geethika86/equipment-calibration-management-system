@@ -1,0 +1,187 @@
+{
+  "README.md": {
+    "sha256": "69a657d3e8245714e5cccc8e97dfe064f1b386bbf5bab1f915df383c6ae6f351",
+    "size_bytes": 3777
+  },
+  "alerts.csv": {
+    "row_count": 2925,
+    "sha256": "3ea5fa3c2c12322a217dc966f412e499676758f06b54624e317bfbb27beb6845",
+    "size_bytes": 593732
+  },
+  "assets.csv": {
+    "row_count": 100,
+    "sha256": "4016dea1c8aadde6b2dfce573ff543718a37fdc90ac5377ae8312c831d7d8daa",
+    "size_bytes": 8020
+  },
+  "audit_records.csv": {
+    "row_count": 364,
+    "sha256": "5e747cf370cc997c0aef20c84ddcc8ff174fa9a0e2dd61e3999ec4f1323f2515",
+    "size_bytes": 36269
+  },
+  "calibration_events.csv": {
+    "row_count": 250,
+    "sha256": "a351a1d2703f88fb3cb184668f25670659b269240539348a5e61c1a33c0f4916",
+    "size_bytes": 27683
+  },
+  "calibration_extensions.csv": {
+    "row_count": 50,
+    "sha256": "089cdaed6df6385fa7903fd29de773bea06b94010a54334b87066eae146f7bf1",
+    "size_bytes": 10495
+  },
+  "calibration_plans.csv": {
+    "row_count": 5,
+    "sha256": "3c2a971d6560a820aae7f72a47d608ee8031d4c7feb13c91a07fb8572cc79185",
+    "size_bytes": 274
+  },
+  "certificates.csv": {
+    "row_count": 248,
+    "sha256": "c81523c133e0fe4b395b3325de9ecd3cf08032ba6576d94f671150a2b6a8dcdb",
+    "size_bytes": 27374
+  },
+  "data_dictionary.md": {
+    "sha256": "ad551c4b7d01a28f5150554410febfebb51aaf1ee347796de49e128236aae12d",
+    "size_bytes": 16628
+  },
+  "datasets.json": {
+    "sha256": "0c6f2abde9fb42d64a243c0748059fc57d77734698037046fdeb9551f947e44d",
+    "size_bytes": 3165284
+  },
+  "datasets.sql": {
+    "sha256": "d475c9b98bdebae97d727ccbb6b02ec779d851880b6191cb4d390082640ad2d6",
+    "size_bytes": 1694355
+  },
+  "date_range": {
+    "end": "2025-12-31",
+    "start": "2025-01-01"
+  },
+  "files": {
+    "README.md": {
+      "sha256": "69a657d3e8245714e5cccc8e97dfe064f1b386bbf5bab1f915df383c6ae6f351",
+      "size_bytes": 3777
+    },
+    "alerts.csv": {
+      "row_count": 2925,
+      "sha256": "3ea5fa3c2c12322a217dc966f412e499676758f06b54624e317bfbb27beb6845",
+      "size_bytes": 593732
+    },
+    "assets.csv": {
+      "row_count": 100,
+      "sha256": "4016dea1c8aadde6b2dfce573ff543718a37fdc90ac5377ae8312c831d7d8daa",
+      "size_bytes": 8020
+    },
+    "audit_records.csv": {
+      "row_count": 364,
+      "sha256": "5e747cf370cc997c0aef20c84ddcc8ff174fa9a0e2dd61e3999ec4f1323f2515",
+      "size_bytes": 36269
+    },
+    "calibration_events.csv": {
+      "row_count": 250,
+      "sha256": "a351a1d2703f88fb3cb184668f25670659b269240539348a5e61c1a33c0f4916",
+      "size_bytes": 27683
+    },
+    "calibration_extensions.csv": {
+      "row_count": 50,
+      "sha256": "089cdaed6df6385fa7903fd29de773bea06b94010a54334b87066eae146f7bf1",
+      "size_bytes": 10495
+    },
+    "calibration_plans.csv": {
+      "row_count": 5,
+      "sha256": "3c2a971d6560a820aae7f72a47d608ee8031d4c7feb13c91a07fb8572cc79185",
+      "size_bytes": 274
+    },
+    "certificates.csv": {
+      "row_count": 248,
+      "sha256": "c81523c133e0fe4b395b3325de9ecd3cf08032ba6576d94f671150a2b6a8dcdb",
+      "size_bytes": 27374
+    },
+    "data_dictionary.md": {
+      "sha256": "ad551c4b7d01a28f5150554410febfebb51aaf1ee347796de49e128236aae12d",
+      "size_bytes": 16628
+    },
+    "datasets.json": {
+      "sha256": "0c6f2abde9fb42d64a243c0748059fc57d77734698037046fdeb9551f947e44d",
+      "size_bytes": 3165284
+    },
+    "datasets.sql": {
+      "sha256": "d475c9b98bdebae97d727ccbb6b02ec779d851880b6191cb4d390082640ad2d6",
+      "size_bytes": 1694355
+    },
+    "ground_truth.csv": {
+      "row_count": 6,
+      "sha256": "456edf27cc0f03dfdd4ab907ab42df7875f409547f91978501463e343e1097d2",
+      "size_bytes": 1175
+    },
+    "ground_truth.json": {
+      "sha256": "2dc85c7670478b55a6fa35cb90698f311ea65314d31a2cce234f13dafebc6084",
+      "size_bytes": 2002
+    },
+    "instrument_types.csv": {
+      "row_count": 5,
+      "sha256": "181a01d98cd01bd11b2238718dbaedff138e0c535ea2b0e7605a0ac5f198f7b5",
+      "size_bytes": 242
+    },
+    "production_uses.csv": {
+      "row_count": 5000,
+      "sha256": "e95269ae4a8246d4d983f9d49d7069ad9a8caa2d719bce86f0758ca7b7f588c3",
+      "size_bytes": 573630
+    },
+    "schema.json": {
+      "sha256": "8638588fd4bca2132834e72ba13599ce8e9112aa4f5fbb29e13d545f6d30d6ec",
+      "size_bytes": 3901
+    },
+    "suppliers.csv": {
+      "row_count": 9,
+      "sha256": "8a67196960ad444a2340bb698a1f9a6829b498681d6a8c77083dd316eada1837",
+      "size_bytes": 433
+    },
+    "validation_summary.txt": {
+      "sha256": "ae46e277fd111ad996dcf96521eb074952bb319040d2e5d721d6a0b8dd3e6179",
+      "size_bytes": 1701
+    },
+    "work_orders.csv": {
+      "row_count": 12,
+      "sha256": "19abc6075fdf936f59a4efa01209d0319800cc0b9c510906f197f986936b2076",
+      "size_bytes": 3558
+    }
+  },
+  "generator": "generator_quality.py",
+  "ground_truth.csv": {
+    "row_count": 6,
+    "sha256": "456edf27cc0f03dfdd4ab907ab42df7875f409547f91978501463e343e1097d2",
+    "size_bytes": 1175
+  },
+  "ground_truth.json": {
+    "sha256": "2dc85c7670478b55a6fa35cb90698f311ea65314d31a2cce234f13dafebc6084",
+    "size_bytes": 2002
+  },
+  "instrument_types.csv": {
+    "row_count": 5,
+    "sha256": "181a01d98cd01bd11b2238718dbaedff138e0c535ea2b0e7605a0ac5f198f7b5",
+    "size_bytes": 242
+  },
+  "production_uses.csv": {
+    "row_count": 5000,
+    "sha256": "e95269ae4a8246d4d983f9d49d7069ad9a8caa2d719bce86f0758ca7b7f588c3",
+    "size_bytes": 573630
+  },
+  "project": "Equipment Calibration Management System",
+  "schema.json": {
+    "sha256": "8638588fd4bca2132834e72ba13599ce8e9112aa4f5fbb29e13d545f6d30d6ec",
+    "size_bytes": 3901
+  },
+  "seed": 20261022,
+  "suppliers.csv": {
+    "row_count": 9,
+    "sha256": "8a67196960ad444a2340bb698a1f9a6829b498681d6a8c77083dd316eada1837",
+    "size_bytes": 433
+  },
+  "validation_summary.txt": {
+    "sha256": "ae46e277fd111ad996dcf96521eb074952bb319040d2e5d721d6a0b8dd3e6179",
+    "size_bytes": 1701
+  },
+  "work_orders.csv": {
+    "row_count": 12,
+    "sha256": "19abc6075fdf936f59a4efa01209d0319800cc0b9c510906f197f986936b2076",
+    "size_bytes": 3558
+  }
+}

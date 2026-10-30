@@ -1,0 +1,136 @@
+{
+  "business_rules": [
+    "due_date = calibration event date + plan interval_days",
+    "a production use after effective due date is blocked unless an approved extension is in force",
+    "a failed calibration requires corrective action and impact assessment",
+    "certificate asset_id must match the asset_id on its calibration event",
+    "ground_truth is kept separate from source event tables"
+  ],
+  "date_range": {
+    "end": "2025-12-31",
+    "start": "2025-01-01"
+  },
+  "entities": {
+    "Alert": {
+      "foreign_keys": [
+        "entity_id is polymorphic and documented by entity_type"
+      ],
+      "primary_key": "alert_id",
+      "table": "alerts"
+    },
+    "AnomalyFinding": {
+      "foreign_keys": [
+        "ground_truth_id -> ground_truth.ground_truth_id"
+      ],
+      "primary_key": "finding_id",
+      "table": "anomaly_findings"
+    },
+    "ApprovedException": {
+      "foreign_keys": [
+        "asset_id -> assets.asset_id",
+        "calibration_id -> calibration_events.calibration_id"
+      ],
+      "primary_key": "exception_id",
+      "table": "approved_exceptions"
+    },
+    "Asset": {
+      "primary_key": "asset_id",
+      "relationships": [
+        "InstrumentType 1:N Asset",
+        "CalibrationPlan 1:N Asset"
+      ],
+      "table": "assets"
+    },
+    "AuditRecord": {
+      "foreign_keys": [
+        "entity_id is polymorphic and documented by entity_type"
+      ],
+      "primary_key": "audit_id",
+      "table": "audit_records"
+    },
+    "CalibrationEvent": {
+      "foreign_keys": [
+        "asset_id -> assets.asset_id",
+        "supplier_id -> suppliers.supplier_id"
+      ],
+      "primary_key": "calibration_id",
+      "table": "calibration_events"
+    },
+    "CalibrationExtension": {
+      "foreign_keys": [
+        "asset_id -> assets.asset_id",
+        "calibration_id -> calibration_events.calibration_id"
+      ],
+      "primary_key": "extension_id",
+      "table": "calibration_extensions"
+    },
+    "CalibrationPlan": {
+      "foreign_keys": [
+        "type_id -> instrument_types.type_id"
+      ],
+      "primary_key": "plan_id",
+      "table": "calibration_plans"
+    },
+    "Certificate": {
+      "cardinality": "one certificate per certified calibration; certificate gaps are explicitly labelled",
+      "foreign_keys": [
+        "calibration_id -> calibration_events.calibration_id",
+        "asset_id -> assets.asset_id"
+      ],
+      "primary_key": "certificate_id",
+      "table": "certificates"
+    },
+    "GroundTruth": {
+      "primary_key": "ground_truth_id",
+      "purpose": "evaluation labels only; exclude from input features",
+      "table": "ground_truth"
+    },
+    "InstrumentType": {
+      "primary_key": "type_id",
+      "table": "instrument_types"
+    },
+    "ProductionUse": {
+      "foreign_keys": [
+        "asset_id -> assets.asset_id",
+        "applicable_calibration_id -> calibration_events.calibration_id (optional)"
+      ],
+      "primary_key": "use_id",
+      "table": "production_uses"
+    },
+    "Supplier": {
+      "primary_key": "supplier_id",
+      "table": "suppliers"
+    },
+    "WorkOrder": {
+      "foreign_keys": [
+        "asset_id -> assets.asset_id",
+        "calibration_id -> calibration_events.calibration_id"
+      ],
+      "primary_key": "work_order_id",
+      "table": "work_orders"
+    }
+  },
+  "lifecycle_states": {
+    "alert": [
+      "OPEN",
+      "ACKNOWLEDGED",
+      "RESOLVED"
+    ],
+    "asset": [
+      "ACTIVE",
+      "MAINTENANCE",
+      "RETIRED"
+    ],
+    "calibration_result": [
+      "PASS",
+      "FAIL"
+    ],
+    "work_order": [
+      "OPEN",
+      "IN_PROGRESS",
+      "COMPLETED"
+    ]
+  },
+  "project": "Equipment Calibration Management System",
+  "seed": 20261022
+}

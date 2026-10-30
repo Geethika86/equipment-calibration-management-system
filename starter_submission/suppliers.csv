@@ -1,0 +1,10 @@
+supplier_id,name,iso_accredited,country
+SUP-001,Calibration Vendor 1 Ltd.,False,IN
+SUP-002,Calibration Vendor 2 Ltd.,True,IN
+SUP-003,Calibration Vendor 3 Ltd.,False,IN
+SUP-004,Calibration Vendor 4 Ltd.,True,IN
+SUP-005,Calibration Vendor 5 Ltd.,False,IN
+SUP-006,Calibration Vendor 6 Ltd.,True,IN
+SUP-007,Calibration Vendor 7 Ltd.,False,IN
+SUP-008,Calibration Vendor 8 Ltd.,True,IN
+SUP-009,Calibration Vendor 9 Ltd.,False,IN

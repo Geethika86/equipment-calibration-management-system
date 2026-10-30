@@ -1,0 +1,199 @@
+{
+  "alerts.csv": {
+    "row_count": 2961,
+    "sha256": "a25ddd76090b3bbcf151b99ba8a1cc2ed0142d08994628bba58d5b4f7cc832f3",
+    "size_bytes": 600807
+  },
+  "anomaly_findings.csv": {
+    "row_count": 6,
+    "sha256": "26759e4aec0303229397a03df869f2bb09dfabcbf1660a38ce86c79ea19cbac3",
+    "size_bytes": 1330
+  },
+  "approved_exceptions.csv": {
+    "row_count": 50,
+    "sha256": "d550924dad55eed2d616cdb6eab6a58bb651586ee3d1ecfbe2d097e47313895a",
+    "size_bytes": 8405
+  },
+  "assets.csv": {
+    "row_count": 100,
+    "sha256": "4016dea1c8aadde6b2dfce573ff543718a37fdc90ac5377ae8312c831d7d8daa",
+    "size_bytes": 8020
+  },
+  "audit_records.csv": {
+    "row_count": 267,
+    "sha256": "2c48e9e27b68815929993bce4c68675a5e8f85ab8a4b50113e36913a22b0584f",
+    "size_bytes": 27198
+  },
+  "calibration_events.csv": {
+    "row_count": 250,
+    "sha256": "a351a1d2703f88fb3cb184668f25670659b269240539348a5e61c1a33c0f4916",
+    "size_bytes": 27683
+  },
+  "calibration_extensions.csv": {
+    "row_count": 50,
+    "sha256": "1f4697e35b9a16962133c8cebabf1b1bdacff657eb344a5c45b1fa987d5fb35c",
+    "size_bytes": 8405
+  },
+  "calibration_plans.csv": {
+    "row_count": 5,
+    "sha256": "3c2a971d6560a820aae7f72a47d608ee8031d4c7feb13c91a07fb8572cc79185",
+    "size_bytes": 274
+  },
+  "certificates.csv": {
+    "row_count": 248,
+    "sha256": "c81523c133e0fe4b395b3325de9ecd3cf08032ba6576d94f671150a2b6a8dcdb",
+    "size_bytes": 27374
+  },
+  "data_dictionary.md": {
+    "sha256": "c7c6920acfda032e9165b55b9f5adb7371df050758e3cbbd0898afc4398c606b",
+    "size_bytes": 12271
+  },
+  "datasets.json": {
+    "sha256": "74b6e0c2aed2132ab9fab86ffaacc9c0722221d9d24e03d88d10199226233ace",
+    "size_bytes": 3307028
+  },
+  "datasets.sql": {
+    "sha256": "999b4184ff7e109c436c564d7876da3b9b1a4dec839593ec2be8d29ded034a39",
+    "size_bytes": 1724117
+  },
+  "date_range": {
+    "end": "2025-12-31",
+    "start": "2025-01-01"
+  },
+  "files": {
+    "alerts.csv": {
+      "row_count": 2961,
+      "sha256": "a25ddd76090b3bbcf151b99ba8a1cc2ed0142d08994628bba58d5b4f7cc832f3",
+      "size_bytes": 600807
+    },
+    "anomaly_findings.csv": {
+      "row_count": 6,
+      "sha256": "26759e4aec0303229397a03df869f2bb09dfabcbf1660a38ce86c79ea19cbac3",
+      "size_bytes": 1330
+    },
+    "approved_exceptions.csv": {
+      "row_count": 50,
+      "sha256": "d550924dad55eed2d616cdb6eab6a58bb651586ee3d1ecfbe2d097e47313895a",
+      "size_bytes": 8405
+    },
+    "assets.csv": {
+      "row_count": 100,
+      "sha256": "4016dea1c8aadde6b2dfce573ff543718a37fdc90ac5377ae8312c831d7d8daa",
+      "size_bytes": 8020
+    },
+    "audit_records.csv": {
+      "row_count": 267,
+      "sha256": "2c48e9e27b68815929993bce4c68675a5e8f85ab8a4b50113e36913a22b0584f",
+      "size_bytes": 27198
+    },
+    "calibration_events.csv": {
+      "row_count": 250,
+      "sha256": "a351a1d2703f88fb3cb184668f25670659b269240539348a5e61c1a33c0f4916",
+      "size_bytes": 27683
+    },
+    "calibration_extensions.csv": {
+      "row_count": 50,
+      "sha256": "1f4697e35b9a16962133c8cebabf1b1bdacff657eb344a5c45b1fa987d5fb35c",
+      "size_bytes": 8405
+    },
+    "calibration_plans.csv": {
+      "row_count": 5,
+      "sha256": "3c2a971d6560a820aae7f72a47d608ee8031d4c7feb13c91a07fb8572cc79185",
+      "size_bytes": 274
+    },
+    "certificates.csv": {
+      "row_count": 248,
+      "sha256": "c81523c133e0fe4b395b3325de9ecd3cf08032ba6576d94f671150a2b6a8dcdb",
+      "size_bytes": 27374
+    },
+    "data_dictionary.md": {
+      "sha256": "c7c6920acfda032e9165b55b9f5adb7371df050758e3cbbd0898afc4398c606b",
+      "size_bytes": 12271
+    },
+    "datasets.json": {
+      "sha256": "74b6e0c2aed2132ab9fab86ffaacc9c0722221d9d24e03d88d10199226233ace",
+      "size_bytes": 3307028
+    },
+    "datasets.sql": {
+      "sha256": "999b4184ff7e109c436c564d7876da3b9b1a4dec839593ec2be8d29ded034a39",
+      "size_bytes": 1724117
+    },
+    "ground_truth.csv": {
+      "row_count": 6,
+      "sha256": "5372e3096fdbe4e8909ce1f245d956afcf869cc8872037b13c1f3cf8e5d144a1",
+      "size_bytes": 1154
+    },
+    "ground_truth.json": {
+      "sha256": "689629f8379e04f697c2bae415c2f8538f7efacfcd95104dd98023624c11998e",
+      "size_bytes": 1983
+    },
+    "instrument_types.csv": {
+      "row_count": 5,
+      "sha256": "181a01d98cd01bd11b2238718dbaedff138e0c535ea2b0e7605a0ac5f198f7b5",
+      "size_bytes": 242
+    },
+    "production_uses.csv": {
+      "row_count": 5000,
+      "sha256": "e4274fa4991569625facd3b88e15da52adf34a4767642807f7d61657a6b2d9c3",
+      "size_bytes": 578001
+    },
+    "schema.json": {
+      "sha256": "535ab81a2791e9221e5a220ee63265063bf15e763ef75c2b0f318b1932c51a56",
+      "size_bytes": 3843
+    },
+    "suppliers.csv": {
+      "row_count": 9,
+      "sha256": "8a67196960ad444a2340bb698a1f9a6829b498681d6a8c77083dd316eada1837",
+      "size_bytes": 433
+    },
+    "validation_summary.txt": {
+      "sha256": "c78e7ef41d7979536dc9b5fe227dd1d5b0bc4d8c7f3fe9ac5f2d5c53a0e53dbf",
+      "size_bytes": 1470
+    },
+    "work_orders.csv": {
+      "row_count": 11,
+      "sha256": "92da2d68cab884ec4821b50139a8b2768d32e8144f66f60bae8b667db5f1612d",
+      "size_bytes": 3338
+    }
+  },
+  "generator": "generator_fixed.py",
+  "ground_truth.csv": {
+    "row_count": 6,
+    "sha256": "5372e3096fdbe4e8909ce1f245d956afcf869cc8872037b13c1f3cf8e5d144a1",
+    "size_bytes": 1154
+  },
+  "ground_truth.json": {
+    "sha256": "689629f8379e04f697c2bae415c2f8538f7efacfcd95104dd98023624c11998e",
+    "size_bytes": 1983
+  },
+  "instrument_types.csv": {
+    "row_count": 5,
+    "sha256": "181a01d98cd01bd11b2238718dbaedff138e0c535ea2b0e7605a0ac5f198f7b5",
+    "size_bytes": 242
+  },
+  "production_uses.csv": {
+    "row_count": 5000,
+    "sha256": "e4274fa4991569625facd3b88e15da52adf34a4767642807f7d61657a6b2d9c3",
+    "size_bytes": 578001
+  },
+  "project": "Equipment Calibration Management System",
+  "schema.json": {
+    "sha256": "535ab81a2791e9221e5a220ee63265063bf15e763ef75c2b0f318b1932c51a56",
+    "size_bytes": 3843
+  },
+  "seed": 20261022,
+  "suppliers.csv": {
+    "row_count": 9,
+    "sha256": "8a67196960ad444a2340bb698a1f9a6829b498681d6a8c77083dd316eada1837",
+    "size_bytes": 433
+  },
+  "validation_summary.txt": {
+    "sha256": "c78e7ef41d7979536dc9b5fe227dd1d5b0bc4d8c7f3fe9ac5f2d5c53a0e53dbf",
+    "size_bytes": 1470
+  },
+  "work_orders.csv": {
+    "row_count": 11,
+    "sha256": "92da2d68cab884ec4821b50139a8b2768d32e8144f66f60bae8b667db5f1612d",
+    "size_bytes": 3338
+  }
+}

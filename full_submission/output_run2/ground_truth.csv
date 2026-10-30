@@ -1,0 +1,55 @@
+ground_truth_id,entity_type,entity_id,issue_type,details,expected_decision
+GT-000001,CalibrationEvent,CAL-AST-001190-2026-000100,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000002,CalibrationEvent,CAL-AST-001756-2026-000200,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000003,CalibrationEvent,CAL-AST-001930-2026-000300,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000004,CalibrationEvent,CAL-AST-000934-2026-000400,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000005,CalibrationEvent,CAL-AST-001372-2026-000500,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000006,CalibrationEvent,CAL-AST-000810-2026-000600,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000007,CalibrationEvent,CAL-AST-001174-2026-000700,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000008,CalibrationEvent,CAL-AST-000829-2026-000800,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000009,CalibrationEvent,CAL-AST-001686-2026-000900,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000010,CalibrationEvent,CAL-AST-001438-2026-001000,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000011,CalibrationEvent,CAL-AST-000408-2026-001100,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000012,CalibrationEvent,CAL-AST-000522-2026-001200,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000013,CalibrationEvent,CAL-AST-000452-2026-001300,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000014,CalibrationEvent,CAL-AST-001581-2026-001400,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000015,CalibrationEvent,CAL-AST-000986-2026-001500,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000016,CalibrationEvent,CAL-AST-000506-2026-001600,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000017,CalibrationEvent,CAL-AST-001239-2026-001700,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000018,CalibrationEvent,CAL-AST-000871-2026-001800,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000019,CalibrationEvent,CAL-AST-000065-2026-001900,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000020,CalibrationEvent,CAL-AST-001801-2026-002000,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000021,CalibrationEvent,CAL-AST-001957-2026-002100,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000022,CalibrationEvent,CAL-AST-000285-2026-002200,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000023,CalibrationEvent,CAL-AST-000016-2026-002300,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000024,CalibrationEvent,CAL-AST-000858-2026-002400,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000025,CalibrationEvent,CAL-AST-001439-2026-002500,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000026,CalibrationEvent,CAL-AST-001804-2026-002600,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000027,CalibrationEvent,CAL-AST-001479-2026-002700,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000028,CalibrationEvent,CAL-AST-000648-2026-002800,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000029,CalibrationEvent,CAL-AST-001693-2026-002900,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000030,CalibrationEvent,CAL-AST-000068-2026-003000,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000031,CalibrationEvent,CAL-AST-000795-2026-003100,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000032,CalibrationEvent,CAL-AST-000895-2026-003200,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000033,CalibrationEvent,CAL-AST-001979-2026-003300,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000034,CalibrationEvent,CAL-AST-000376-2026-003400,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000035,CalibrationEvent,CAL-AST-000902-2026-003500,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000036,CalibrationEvent,CAL-AST-001056-2026-003600,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000037,CalibrationEvent,CAL-AST-000986-2026-003700,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000038,CalibrationEvent,CAL-AST-000310-2026-003800,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000039,CalibrationEvent,CAL-AST-000884-2026-003900,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000040,CalibrationEvent,CAL-AST-000913-2026-004000,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000041,CalibrationEvent,CAL-AST-001350-2026-004100,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000042,CalibrationEvent,CAL-AST-001181-2026-004200,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000043,CalibrationEvent,CAL-AST-000343-2026-004300,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000044,CalibrationEvent,CAL-AST-001697-2026-004400,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000045,CalibrationEvent,CAL-AST-000642-2026-004500,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000046,CalibrationEvent,CAL-AST-000575-2026-004600,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000047,CalibrationEvent,CAL-AST-000997-2026-004700,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000048,CalibrationEvent,CAL-AST-001940-2026-004800,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000049,CalibrationEvent,CAL-AST-000117-2026-004900,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000050,CalibrationEvent,CAL-AST-001325-2026-005000,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000051,CalibrationEvent,CAL-AST-000840-2026-000001,DUE_DATE_INCONSISTENT_WITH_PLAN,Stored due date does not equal event date plus plan interval.,FLAG_DUE_DATE_INCONSISTENCY
+GT-000052,ProductionUse,USE-AST-001696-20260715010000,EXPIRED_INSTRUMENT_USED_WITHOUT_EXCEPTION,Use event occurs after calibration expiry without an approved extension.,BLOCK_USE_AND_RAISE_HIGH_ALERT
+GT-000053,Certificate,CERT-CAL-AST-001696-2026-000002,CERTIFICATE_ASSET_MISMATCH,Certificate asset differs from the asset on its calibration event.,FLAG_CERTIFICATE_ASSET_MISMATCH
+GT-000054,CalibrationEvent,CAL-AST-000342-2026-000003,FAILED_CALIBRATION_NO_IMPACT_ASSESSMENT,"Calibration failed and a corrective work order exists, but impact_assessment is missing.",COMPLETE_IMPACT_ASSESSMENT_AND_REVIEW_AFFECTED_PRODUCTION

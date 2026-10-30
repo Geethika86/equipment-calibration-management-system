@@ -1,0 +1,42 @@
+EQUIPMENT CALIBRATION MANAGEMENT SYSTEM - VALIDATION SUMMARY
+Seed: 20261022
+Generation period: 2025-01-01 through 2025-12-31
+
+ROW COUNTS
+suppliers: 9
+instrument_types: 5
+calibration_plans: 5
+assets: 100
+calibration_events: 250
+certificates: 248
+work_orders: 12
+production_uses: 5000
+calibration_extensions: 50
+alerts: 2925
+audit_records: 364
+ground_truth: 6
+
+PRODUCTION-USE DECISION METRICS
+ALLOWED_IN_CALIBRATION_WINDOW: 2092
+ALLOWED_EXTENSION: 1
+BLOCKED_OVERDUE: 760
+BLOCKED_FAILED_CALIBRATION: 164
+REVIEW_NO_CALIBRATION: 1983
+Approved-extension usage rate: 0.0200%
+Blocked/review use rate: 58.1400%
+
+VALIDATION CHECKS
+Primary-key uniqueness: PASS
+Foreign-key integrity (except documented business mismatch): PASS
+Due-date arithmetic (excluding labelled anomaly): PASS
+Failed-calibration corrective actions: PASS
+Required edge-case coverage: PASS
+Overall validation: PASS
+
+DOCUMENTED EDGE CASES
+CERTIFICATE_MISSING: CAL-AST-000046-2026-000100 — Calibration event has no certificate record.
+CERTIFICATE_MISSING: CAL-AST-000062-2026-000200 — Calibration event has no certificate record.
+DUE_DATE_INCONSISTENT_WITH_PLAN: CAL-AST-000008-2026-000001 — Stored due date does not equal event date plus plan interval.
+EXPIRED_INSTRUMENT_USED_WITHOUT_EXCEPTION: USE-AST-000008-20990131010000 — Use event occurs after calibration expiry without an approved extension.
+CERTIFICATE_ASSET_MISMATCH: CERT-CAL-AST-000016-2026-000002 — Certificate asset differs from the asset on its calibration event.
+FAILED_CALIBRATION_NO_IMPACT_ASSESSMENT: CAL-AST-000001-2026-000003 — Calibration failed and a corrective work order exists, but impact_assessment is missing.

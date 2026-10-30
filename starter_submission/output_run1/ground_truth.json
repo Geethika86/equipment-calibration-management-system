@@ -1,0 +1,50 @@
+[
+  {
+    "ground_truth_id": "GT-000001",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000046-2026-000100",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000002",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000062-2026-000200",
+    "issue_type": "CERTIFICATE_MISSING",
+    "details": "Calibration event has no certificate record.",
+    "expected_decision": "RAISE_CERTIFICATE_GAP_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000003",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000008-2026-000001",
+    "issue_type": "DUE_DATE_INCONSISTENT_WITH_PLAN",
+    "details": "Stored due date does not equal event date plus plan interval.",
+    "expected_decision": "FLAG_DUE_DATE_INCONSISTENCY"
+  },
+  {
+    "ground_truth_id": "GT-000004",
+    "entity_type": "ProductionUse",
+    "entity_id": "USE-AST-000008-20990131010000",
+    "issue_type": "EXPIRED_INSTRUMENT_USED_WITHOUT_EXCEPTION",
+    "details": "Use event occurs after calibration expiry without an approved extension.",
+    "expected_decision": "BLOCK_USE_AND_RAISE_HIGH_ALERT"
+  },
+  {
+    "ground_truth_id": "GT-000005",
+    "entity_type": "Certificate",
+    "entity_id": "CERT-CAL-AST-000016-2026-000002",
+    "issue_type": "CERTIFICATE_ASSET_MISMATCH",
+    "details": "Certificate asset differs from the asset on its calibration event.",
+    "expected_decision": "FLAG_CERTIFICATE_ASSET_MISMATCH"
+  },
+  {
+    "ground_truth_id": "GT-000006",
+    "entity_type": "CalibrationEvent",
+    "entity_id": "CAL-AST-000001-2026-000003",
+    "issue_type": "FAILED_CALIBRATION_NO_IMPACT_ASSESSMENT",
+    "details": "Calibration failed and a corrective work order exists, but impact_assessment is missing.",
+    "expected_decision": "COMPLETE_IMPACT_ASSESSMENT_AND_REVIEW_AFFECTED_PRODUCTION"
+  }
+]

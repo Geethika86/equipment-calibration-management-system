@@ -1,0 +1,7 @@
+ground_truth_id,entity_type,entity_id,issue_type,details,expected_decision
+GT-000001,CalibrationEvent,CAL-AST-000046-2026-000100,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000002,CalibrationEvent,CAL-AST-000062-2026-000200,CERTIFICATE_MISSING,Calibration event has no certificate record.,RAISE_CERTIFICATE_GAP_ALERT
+GT-000003,CalibrationEvent,CAL-AST-000008-2026-000001,DUE_DATE_INCONSISTENT_WITH_PLAN,Stored due date does not equal event date plus plan interval.,FLAG_DUE_DATE_INCONSISTENCY
+GT-000004,ProductionUse,USE-AST-000016-20250729010000,EXPIRED_INSTRUMENT_USED_WITHOUT_EXCEPTION,Use event occurs after calibration expiry without an approved extension.,BLOCK_USE_AND_RAISE_HIGH_ALERT
+GT-000005,Certificate,CERT-CAL-AST-000016-2026-000002,CERTIFICATE_ASSET_MISMATCH,Certificate asset differs from the asset on its calibration event.,FLAG_CERTIFICATE_ASSET_MISMATCH
+GT-000006,CalibrationEvent,CAL-AST-000001-2026-000003,FAILED_CALIBRATION_NO_IMPACT_ASSESSMENT,Calibration failed but no corrective work order or impact assessment exists.,CREATE_CORRECTIVE_WORK_ORDER_AND_IMPACT_ASSESSMENT

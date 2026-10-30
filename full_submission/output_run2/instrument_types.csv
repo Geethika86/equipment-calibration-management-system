@@ -1,0 +1,6 @@
+type_id,type_name,measurement_unit,default_interval_days,tolerance_limit
+IT-001,PRESSURE_GAUGE,PSI,90,0.5
+IT-002,TEMP_SENSOR,Celsius,180,0.8
+IT-003,TORQUE_WRENCH,Nm,30,1.0
+IT-004,FLOW_METER,L/min,365,0.7
+IT-005,SCALE_BALANCE,kg,120,0.6

@@ -1,0 +1,10 @@
+EQUIPMENT CALIBRATION MANAGEMENT SYSTEM - VALIDATION
+Output directory: starter_submission
+Assets: 100
+Calibration events: 250
+Production uses: 5000
+Certificates: 248
+Work orders: 11
+Ground-truth labels: 6
+Anomaly findings: 6
+Validation result: PASS

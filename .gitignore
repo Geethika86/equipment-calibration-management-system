@@ -6,3 +6,13 @@ __pycache__/
 .env
 .idea/
 .vscode/
+*.db
+output_*/
+starter_output/
+starter_test/
+quality_*/
+*_backup.py
+*_before_*.py
+schema_old_backup.sql
+seed_old_backup.sql
+verify_seed_old.py

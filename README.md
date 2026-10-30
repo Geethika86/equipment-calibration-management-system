@@ -26,18 +26,24 @@ Activate the virtual environment if needed:
 Generate a starter dataset:
 
 ```powershell
-python .\generator_fixed.py --scale starter --output starter_output
+python .\generator_quality.py --profile starter --output-base starter_submission
 ```
 
 Generate the full dataset:
 
 ```powershell
-python .\generator_fixed.py --scale full --output output_final
+python .\generator_quality.py --profile full --output-base full_submission
 ```
 
-The generator supports configurable scale and output-directory arguments. Run `python .\generator_fixed.py --help` to see the available options.
+To see all available options:
 
-The fixed random seed is `20261022`, and the generated period is 2025-01-01 through 2025-12-31.
+```powershell
+python .\generator_quality.py --help
+```
+
+The generator uses a fixed random seed of `20261022`.
+
+The generated period is 2025-01-01 through 2025-12-31.
 
 ## 4. Full dataset counts
 
@@ -72,7 +78,9 @@ The generated data includes labelled scenarios for:
 4. `CERTIFICATE_ASSET_MISMATCH`
 5. `FAILED_CALIBRATION_NO_IMPACT_ASSESSMENT`
 
-The generator writes evaluation labels to `ground_truth.csv` and `ground_truth.json`, separate from the source event datasets. Do not use these evaluation labels as model input features when evaluating anomaly detection.
+The generator writes evaluation labels to `ground_truth.csv` and `ground_truth.json`, separate from the source event datasets.
+
+Do not use these evaluation labels as model input features when evaluating anomaly detection.
 
 ## 6. Output files
 
@@ -89,13 +97,28 @@ It also includes:
 
 ## 7. Validation and tests
 
-Run the automated tests:
+Run both automated test suites:
 
 ```powershell
 python -m unittest -v test_calibration_system.py
+python -m unittest -v test_generator_quality.py
 ```
 
-The current test suite contains eight tests covering dataset volumes, primary-key uniqueness, compliance flags, and required anomaly scenarios.
+**Verified test results:**
+
+- `test_calibration_system.py` — 8 tests passed.
+- `test_generator_quality.py` — 6 tests passed.
+- Total — 14 tests passed.
+
+The tests cover:
+
+- Dataset volumes
+- Primary-key uniqueness
+- Compliance flags
+- Required anomaly scenarios
+- Approved extension workflow
+- Failed-calibration assessment checks
+- SQL export and validation summary
 
 The full run reported these checks as passing:
 
@@ -109,9 +132,13 @@ The tests and validation checks cover selected requirements; they do not prove e
 
 ## 8. Reproducibility
 
-Generate the full dataset twice into separate output directories and compare corresponding file SHA-256 hashes. Matching hashes demonstrate byte-for-byte reproducibility for the files compared.
+The generator creates two output runs and compares corresponding generated files using SHA-256 hashes.
+
+Matching hashes demonstrate byte-for-byte reproducibility for the files compared.
 
 The manifest is excluded from some comparison scripts and should be checked separately if it contains output-specific metadata.
+
+The validated starter and full generation runs completed successfully, with all 19 compared generated files passing the reproducibility checks.
 
 ## 9. Data integrity and intentional anomalies
 
